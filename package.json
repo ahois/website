@@ -1,0 +1,17 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "devDependencies": {
+    "connect": "~2.7.10",
+    "grunt": "0.4.2",
+    "grunt-contrib": "0.4.0",
+    "grunt-contrib-connect": "0.1.2",
+    "matchdep": "*"
+  },
+  "peerDependencies": {
+    "grunt-cli": "0.1.13"
+  }
+}
