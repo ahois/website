@@ -1,0 +1,51 @@
+
+#bigContainer {
+width:500px;
+margin:auto;
+}
+
+#topSpace {
+height:70px;
+width: 500px;
+}
+
+.container {
+width:500px;
+height:50px;
+}
+
+.box {
+width:100px;
+height:100px;
+background-color:orange;
+display:inline;
+float: left;
+position:relative;
+border-color:red;
+margin-left: 0px;
+margin-right: 0px;
+}
+
+#bottomSpace {
+height:30px;
+width:500px;
+display:inline;
+float: left;
+position:relative;
+margin-left: 0px;
+margin-right: 0px;
+}
+
+#description {
+height:30px;
+font-size:23px;
+font-family:campton-light;
+background-color:blue;
+}
+
+/* ========== FONT ============= */
+
+@font-face {
+    font-family: campton-light;
+    src: url('../JS/Campton-Light.otf');
+}
