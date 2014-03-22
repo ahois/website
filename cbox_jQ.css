@@ -1,20 +1,31 @@
 
-#bigContainer {
-width:500px;
+#pageContainer {
+width:800px;
 margin:auto;
 }
 
 #boxContainer {
 width: 500px;
-margin: auto;
+margin-top: 70px;
+margin-bottom: 30px;
 }
 
-#topSpace {
-height:70px;
-width: 500px;
+#sliderContainer {
+width: 300px;
+height: 500px;
+background-color: red;
+float: right;
 }
 
-.container {
+.slider {
+	margin: 80px;
+	background-color: blue;
+}
+
+#s1.ui-slider-range { background: #ef2929; }
+
+
+.row {
 width:500px;
 height:100px;
 }
@@ -31,20 +42,11 @@ margin-left: 0px;
 margin-right: 0px;
 }
 
-#bottomSpace {
-height:30px;
-width:500px;
-display:inline;
-float: left;
-position:relative;
-margin-left: 0px;
-margin-right: 0px;
-}
-
 #description {
 height:30px;
 font-size:23px;
 font-family:campton-light;
+margin-bottom: 100px;
 }
 
 /* ========== FONT ============= */

@@ -1,0 +1,48 @@
+
+
+
+#pageWrapper {
+	border:20px solid cyan;
+	width:800px;
+	height:1500px;
+	margin:auto;
+}
+
+#splashWrapper {
+	border:20px solid seaGreen;
+	width:800px;
+	height:600px;
+}
+
+#navWrapper {
+	border:20px solid darkOrange;
+	width:800px;
+	height:70px;
+}
+
+#patternBar {
+	border:20px solid lightPink;
+	width:800px;
+	height:30px;
+}
+
+#navElemWrapper {
+	border: 20px solid LawnGreen;
+	width:800px;
+	height:40px;
+}
+
+#infoWrapper {
+	border:20px solid red;
+	width:800px;
+	height:800px;
+}
+
+.navElem {
+	border:20px solid blue;
+	width: 100px;
+	height:40px;
+	float:left;
+	display:inline;
+}
+

@@ -1,24 +1,35 @@
 
 
 
-
-
-
-
 $(document).ready(function() {
 
 
-//kyrsten's method, works well.
+//kyrsten's suggestion to add var = container
 for(i = 0; i < 5; i++) {
-      var container = $("<div class = 'container'> </div>");
-      $( "#boxContainer" ).append(container);
+      var row = $("<div class = 'row'> </div>");
+      $( "#boxContainer" ).append(row);
       for(j = 0; j < 5; j++) {
-           $( container).append( "<div class = 'box' id = 'b"+i+j+"'> </div>" );
+           (row).append( "<div class = 'box' id = 'b"+i+j+"'> </div>" );
       }      
 }
 
+//create sliders 
+for(ii = 0; ii < 4; ii++) {
+      var slider = $("<div id = 's"+ii+"' class = 'slider' ><input type='range' min='0'max='255'step='1'value='50'></div>");
+      $( "#sliderContainer" ).append(slider);
+  }
 
-//test method to try other way. it did not exactly work.
+   $( "#description" ).slider();
+
+  // for(ii = 0; ii < 4; ii++) {
+  //     var slider = $("<div id = 's"+ii+"' class = 'slider' ></div>");
+  //     $( "#sliderContainer" ).append($("#s"+ii+"s").slider());
+  // }
+
+  //jk. all your answers here: http://jqueryui.com/slider/#colorpicker
+
+
+//test method to try other way. it did not  work.
 //for(i = 0; i < 5; i++) {
 //       $( "#boxContainer" ).append("<div class = 'container'> </div>");
 //       for(j = 0; j < 5; j++) {
@@ -51,15 +62,15 @@ for(i = 0; i < 5; i++) {
 			    //change (add to) rgb values
 			    
 			     red += 3;
-		             green += 3;
-	       		     blue += 3;
+		         green += 3;
+	     	     blue += 3;
 						   
 
 			      // convert individ colors back to strings, create rgb string
 			      red = red.toString();
 			      green = green.toString();
-		      	      blue = blue.toString();
-       			      cssColor = "rgb("+red+","+green+","+blue+")";
+		      	  blue = blue.toString();
+       		      cssColor = "rgb("+red+","+green+","+blue+")";
 					   
 			      // reset background color
 			      $(thisID).css("background-color",cssColor);
