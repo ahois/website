@@ -12,12 +12,16 @@
 	border:20px solid seaGreen;
 	width:800px;
 	height:600px;
+	position: relative;
 }
 
-#navWrapper {
+.navWrapper {
 	border:20px solid darkOrange;
 	width:800px;
 	height:70px;
+	position:absolute;
+  	bottom:0;
+  	left:0;
 }
 
 #patternBar {
@@ -45,4 +49,25 @@
 	float:left;
 	display:inline;
 }
+
+.sticky-wrapper {
+	border: 20px solid purple;
+	height:70px;
+	width:800px;
+	position:absolute;
+  	bottom:0;
+  	left:0;
+}
+
+/*
+left 50% , -400px could be hacky, but seems to work. 
+*/
+
+.stuck {
+	position:fixed;
+	top:0;
+	left:50%;
+	margin-left: -400px;
+}
+
 
