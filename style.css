@@ -1,23 +1,64 @@
 
+/*
+you also have to manually change:
+	.stuck
+	#sticky-wrapper
+	.navWrapper
+*/
+/*.pageWidth {
+	width: 1000px;
+	position:relative;
+	top:0;
+	left:50%;
+	margin-left: -500px;
+}*/
 
+html body {
+	margin:0 auto;
+	padding:0;
+}
+
+h1{
+	vertical-align: middle;
+	color: cornsilk;
+	/*position: relative;*/
+	text-transform: uppercase;
+	border:10px solid;
+	line-height:500px;
+	margin:0;
+	font-color: cornsilk;
+}
+
+a {
+	font-size: 20px;
+	font-color: cornsilk;
+}
 
 #pageWrapper {
-	border:20px solid cyan;
-	width:800px;
-	height:1500px;
-	margin:auto;
+	border: 10px solid cyan;
+	width:1000px;
+	/*height:1000px;*/
+	/*margin:auto;*/
+	position:relative;
+	top:0;
+	left:50%;
+	margin-left: -500px;
 }
 
 #splashWrapper {
-	border:20px solid seaGreen;
-	width:800px;
-	height:600px;
+	border: 10px solid seaGreen;
+	width: 1000;
+	height:500px;
 	position: relative;
+	text-align:center;
+	/*top:0;
+	left:50%;
+	margin-left: -500px;*/
 }
 
 .navWrapper {
-	border:20px solid darkOrange;
-	width:800px;
+	border: 10px solid darkOrange;
+	width:1000px;
 	height:70px;
 	position:absolute;
   	bottom:0;
@@ -25,35 +66,40 @@
 }
 
 #patternBar {
-	border:20px solid lightPink;
-	width:800px;
+	border: 10px solid lightPink;
+	width:100%;
 	height:30px;
+	margin:auto;
 }
 
 #navElemWrapper {
-	border: 20px solid LawnGreen;
-	width:800px;
+	border: 10px solid LawnGreen;
+	width:1000px;
 	height:40px;
+	margin:auto;
+	padding-left: 150px;
+
 }
 
 #infoWrapper {
-	border:20px solid red;
-	width:800px;
-	height:800px;
+	border: 10px solid red;
+	width:1000px;
+	height:500px;
 }
 
 .navElem {
-	border:20px solid blue;
+	border: 10px solid blue;
 	width: 100px;
-	height:40px;
+	height:30px;
 	float:left;
 	display:inline;
+	margin-right: 40px;
 }
 
 .sticky-wrapper {
-	border: 20px solid purple;
+	border: 10px solid orchid;
 	height:70px;
-	width:800px;
+	width:100%;
 	position:absolute;
   	bottom:0;
   	left:0;
@@ -61,13 +107,15 @@
 
 /*
 left 50% , -400px could be hacky, but seems to work. 
+http://stackoverflow.com/questions/2005954/center-element-with-positionfixed
 */
 
 .stuck {
 	position:fixed;
 	top:0;
 	left:50%;
-	margin-left: -400px;
+	margin-left: -500px;
+	z-index:1;
 }
 
 

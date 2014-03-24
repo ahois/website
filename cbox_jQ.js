@@ -13,13 +13,13 @@ for(i = 0; i < 5; i++) {
       }      
 }
 
-//create sliders 
-for(ii = 0; ii < 4; ii++) {
-      var slider = $("<div id = 's"+ii+"' class = 'slider' ><input type='range' min='0'max='255'step='1'value='50'></div>");
-      $( "#sliderContainer" ).append(slider);
-  }
+// //create sliders 
+// for(ii = 0; ii < 4; ii++) {
+//       var slider = $("<div id = 's"+ii+"' class = 'slider' ><input type='range' min='0'max='255'step='1'value='50'></div>");
+//       $( "#sliderContainer" ).append(slider);
+//   }
 
-   $( "#description" ).slider();
+//    $( "#description" ).slider();
 
   // for(ii = 0; ii < 4; ii++) {
   //     var slider = $("<div id = 's"+ii+"' class = 'slider' ></div>");
